@@ -1,13 +1,11 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Deploy ML on Streamlit 
 ```
-⬆️ (Replace above with your app's name)
+Tutorial para fazer o deploy de modelos na streamlit community cloud
 ```
-
-Description of the app ...
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tutorial-deploy.streamlit.app/)
 
 ## GitHub Codespaces
 
