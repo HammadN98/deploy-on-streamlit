@@ -10,15 +10,20 @@ st.info("Este app esta tocando nas nuvens")
 with st.expander('Data'):
   st.write('**Dados**')
   dados = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv")
-  dados
 
-  st.write('**X**') #Como colocar o X e y lado a lado em um expander, como se fossem duas colunas
   X_raw = dados.drop('species', axis =1)
-  X_raw
-
-  st.write('**y**')
   y_raw = dados.species
-  y_raw
+  
+  col1, col2 = st.columns([4.5,1])
+    
+  with col1:
+      st.write('**X**')
+      st.dataframe(X_raw, width=600) 
+
+  with col2:
+      st.write('**y**')
+      st.dataframe(y_raw, width=300)  
+
 
 with st.expander("Visualizacoes"):
   st.scatter_chart(data=dados, x='bill_length_mm', y='body_mass_g', color='species')
@@ -48,9 +53,9 @@ with  st.sidebar: #dados de entrada
 
 
 with st.expander('Input features'):
-  st.write('**Pinguin de entrada**')
+  st.write('**Pinguin de entrada')
   df_entrada
-  st.write('**Penguins combinados**')
+  st.write('**Penguins combinados')
   penguins_entrada
 
 
@@ -76,8 +81,8 @@ with st.expander('Preparacao'):
 
   st.write('Saida com encoded (X)')
   input_raw 
-  #st.write('**Encoded y**')
-  #y
+  st.write('**Encoded y**')
+  y
 
 #TReinamento do modelo e inferindo
 clf = RandomForestClassifier()
