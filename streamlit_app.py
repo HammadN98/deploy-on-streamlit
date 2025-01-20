@@ -48,9 +48,9 @@ with  st.sidebar: #dados de entrada
 
 
 with st.expander('Input features'):
-  st.write('**Pinguin de entrada')
+  st.write('**Pinguin de entrada**')
   df_entrada
-  st.write('**Penguins combinados')
+  st.write('**Penguins combinados**')
   penguins_entrada
 
 
@@ -76,8 +76,8 @@ with st.expander('Preparacao'):
 
   st.write('Saida com encoded (X)')
   input_raw 
-  st.write('**Encoded y**')
-  y
+  #st.write('**Encoded y**')
+  #y
 
 #TReinamento do modelo e inferindo
 clf = RandomForestClassifier()
