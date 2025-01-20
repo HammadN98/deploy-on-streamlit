@@ -14,7 +14,7 @@ with st.expander('Data'):
   X_raw = dados.drop('species', axis =1)
   y_raw = dados.species
   
-  col1, col2 = st.columns([4.5,1])
+  col1, col2 = st.columns([4,1])
     
   with col1:
       st.write('**X**')
